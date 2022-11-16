@@ -6,15 +6,33 @@ margin: 0;
 
 #headerDiv{
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: 1/5 1/5 1/5 1/5 1/5 ;
     justify-items: center;
     background-color: antiquewhite;
+    box-shadow: 0px 3px 50px black;
+}
+
+#getStartedButton{
+    grid-column: 4/5;
+    justify-self:center;
+}
+
+#logInButton{
+    grid-column: 5/6;
+    justify-self:center;
+
+}
+
+#mentalHealthMate{
+    grid-column: 3/4;
+    justify-self:center;
 }
 
 /* #footer{
     position: fixed;
     bottom: 0;
 } */
+
 #footerDiv{
     position: fixed;
     bottom: 0;
@@ -23,6 +41,8 @@ margin: 0;
     grid-template-columns: auto auto auto auto auto;
     justify-items: center;
     background-color: antiquewhite;
+    /* box-shadow: 0px 50px 50px black; */
+    box-shadow: 0px -4px 50px rgba(50, 50, 50, 0.75);
 
 
 }
