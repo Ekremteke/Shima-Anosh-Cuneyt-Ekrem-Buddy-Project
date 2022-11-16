@@ -22,11 +22,22 @@ body{
 #getStartedButton{
     grid-column: 4/5;
     justify-self:center;
+    color: black;
+    padding : 10px;
+    background-color: rgb(9, 218, 218);
+    border-radius: 5px;
+    border-style: none;
 }
 
 #logInButton{
     grid-column: 5/6;
     justify-self:left;
+    color: black;
+     padding : 10px;
+    background-color: rgb(9, 218, 218);
+    border-radius: 5px;
+    border-style: none;
+
 
 }
 
@@ -63,15 +74,23 @@ body{
 grid-column: 1/4;
 grid-row: 2/3;
 justify-self: center;
+color: rgb(63, 62, 62);
+}
+
+#subText{
+    color: antiquewhite;
+    grid-column: 2/3;
+    grid-row: 3/4  ;
+    justify-self: center;
+
 }
 
 
 
-
-.chatbox{
-    grid-column: 3/4;
-    grid-row: 3/4;
-}
+    /* .chatbox{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    } */
 
 
 
