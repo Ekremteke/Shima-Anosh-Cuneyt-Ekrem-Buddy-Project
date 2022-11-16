@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="mentalHealth.png"">
+    <link rel="icon" href="plus.png"">
  
     <title>Mental Health Mate</title>
 </head>
@@ -16,21 +16,47 @@
             <div id="mentalHealthMate">Mental Health Mate</div>
             <button id="getStartedButton">Get Started</button>
             <button id="logInButton">Login</button>
-            <div id="headerIcon" ><img src="mentalHealth.png" alt="mentalHealth"></div>
+            <div id="headerIcon" ><img src="plus.png" alt="mentalHealth"></div>
             
         </div>
     </header>
     <main id="main">
-        <div id="mainDiv"></div>
+        <div id="mainDiv">
+            <h1 id="visionStatement">An online platform for early diagnosis and quick appointments 
+            </h1>
+            <div class="wrapper">
+    <div class="head"></div>
+    <div class="torso"></div>
+    <div class="leftarm"></div>
+    <div class="rightarm"></div>
+    <div class="leftleg"></div>
+    <div class="leftfoot"></div>
+    <div class="rightleg"></div>
+    <div class="rightfoot"></div>
+        </div>
+
+        <button class="open-button" onclick="openForm()">Chat</button>
+
+    <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Chat</h1>
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+        </div>
 
     </main>
     <footer id="footer">
         <div id="footerDiv">
-            <p>What</p>
-            <p>What</p>
-            <p>What</p>
-            <p>What</p>
-            <p>What</p>
+            <p></p>
+            <p></p>
+            <p>© CASE - Cuneyt Anosh Shima Ekrem.  All rights reserved.</p>
+            <p></p>
+            <p></p>
             
         </div>
     </footer>
