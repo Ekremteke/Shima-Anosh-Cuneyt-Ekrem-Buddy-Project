@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: white;
+    --secondary-color: rgb(195, 199, 239);
+    --tertiary-color: rgb(42, 29, 82);
+}
+
+.information-bar{
+display: grid;
+width: 200px;
+margin-top: 50px;
+margin-left: auto;
+margin-right: auto;
+}
+header{
+display: flex;
+margin: 32px;
+justify-content: space-between;
+
+}
