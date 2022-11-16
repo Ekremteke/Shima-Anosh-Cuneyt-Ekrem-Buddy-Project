@@ -1,0 +1,28 @@
+body{ 
+    background-color: rgb(9, 218, 218);
+margin: 0;
+
+}
+
+#headerDiv{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-items: center;
+    background-color: antiquewhite;
+}
+
+/* #footer{
+    position: fixed;
+    bottom: 0;
+} */
+#footerDiv{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-items: center;
+    background-color: antiquewhite;
+
+
+}
