@@ -85,6 +85,25 @@ color: rgb(63, 62, 62);
 
 }
 
+#moodButtons{
+
+    grid-column: 2/3;
+    grid-row: 4/5  ;
+    justify-self: center;
+}
+
+
+#happyButton, #sadButton, #calmButton, #angryButton{
+    font-size: large;
+    font-weight: bolder;
+    /* color: rgb(9, 218, 218); */
+    color: rgb(75, 73, 73);
+    padding : 10px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    border-style: none;
+}
+
 
 
     /* .chatbox{
