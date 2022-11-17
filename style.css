@@ -1,15 +1,349 @@
-* {
+body{ 
+    background-color: rgb(9, 218, 218);
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
-:root {
-    --primary-color: white;
-    --secondary-color: rgb(195, 199, 239);
-    --tertiary-color: rgb(42, 29, 82);
+*{box-sizing: border-box;}
+
+
+/* HEADER */
+#headerDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: antiquewhite;
+    box-shadow: 0px 3px 50px black;
 }
 
+#getStartedButton{
+    grid-column: 4/5;
+    justify-self:center;
+    color: black;
+    padding : 10px;
+    background-color: rgb(9, 218, 218);
+    border-radius: 5px;
+    border-style: none;
+}
+
+#logInButton{
+    grid-column: 5/6;
+    justify-self:left;
+    color: black;
+     padding : 10px;
+    background-color: rgb(9, 218, 218);
+    border-radius: 5px;
+    border-style: none;
+
+
+}
+
+#mentalHealthMate{
+    grid-column: 3/4;
+    justify-self:   center;
+    align-self: center  ;
+}
+
+#headerIcon{
+
+    grid-column: 2/3;
+    justify-self:right;
+    
+}
+
+#headerIcon > img{
+    width: 30%;
+    height: 30%;
+}
+
+
+/* MAIN */
+#mainDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+
+#visionStatement{
+
+grid-column: 1/4;
+grid-row: 2/3;
+justify-self: center;
+color: rgb(63, 62, 62);
+}
+
+#subText{
+    color: antiquewhite;
+    grid-column: 2/3;
+    grid-row: 3/4  ;
+    justify-self: center;
+
+}
+
+#moodButtons{
+
+    grid-column: 2/3;
+    grid-row: 4/5  ;
+    justify-self: center;
+}
+
+
+#happyButton, #sadButton, #calmButton, #angryButton{
+    font-size: large;
+    font-weight: bolder;
+    /* color: rgb(9, 218, 218); */
+    color: rgb(75, 73, 73);
+    padding : 10px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    border-style: none;
+}
+
+
+
+    /* .chatbox{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    } */
+
+
+
+
+/* FOOTER  */
+#footerDiv{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-items: center;
+    background-color: antiquewhite;
+    /* box-shadow: 0px 50px 50px black; */
+    box-shadow: 0px -4px 50px rgba(50, 50, 50, 0.75);
+
+
+}
+/* Testing CSS Grid */
+
+
+/* CSS ANIMATION BELOW --> TAKEN FROM CSS TRICKS */
+
+
+#animation{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    width :50%;
+    height: 10%;
+}
+
+
+.wrapper {
+  width: 300px;
+  height: 300px;
+  display: block;
+  position: relative;
+  
+}
+
+.head {
+  width: 50px;
+  height: 60px;
+  border: 5px solid black;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 21px;
+  left: 133px;
+  z-index: 1;
+  animation: rock 1s alternate infinite ease-in-out;
+  transform-origin: center bottom;
+}
+
+@keyframes rock {
+  0% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+.torso {
+  width: 6px;
+  height: 100px;
+  border: 3px solid black;
+  display: block;
+  position: absolute;
+  top: 80px;
+  left: 156px;
+}
+
+.leftleg {
+  width: 6px;
+  height: 100px;
+  border: 3px solid black;
+  display: block;
+  position: absolute;
+  top: 175px;
+  left: 155px;
+  transform: rotate(12deg);
+  transform-origin: top;
+}
+
+.rightleg {
+  width: 6px;
+  height: 100px;
+  border: 3px solid black;
+  display: block;
+  position: absolute;
+  top: 175px;
+  left: 157px;
+  transform: rotate(-12deg);
+  transform-origin: top;
+}
+
+.leftarm {
+  width: 100px;
+  height: 6px;
+  border: 3px solid black;
+  display: block;
+  position: absolute;
+  top: 86px;
+  left: 57px;
+  animation: wave 1s alternate infinite ease-in-out;
+  transform-origin: 100%;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(40deg);
+  }
+}
+
+.rightarm {
+  width: 100px;
+  height: 6px;
+  border: 3px solid black;
+  display: block;
+  position: absolute;
+  top: 86px;
+  left: 161px;
+  animation: wave2 1s alternate infinite ease-in-out;
+  transform-origin: 0%;
+}
+
+@keyframes wave2 {
+  0% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-40deg);
+  }
+}
+
+.leftfoot {
+  width: 30px;
+  height: 6px;
+  border: 3px solid black;
+  display: block;
+  position: absolute;
+  top: 270px;
+  left: 110px;
+  transform: rotate(8deg);
+}
+
+.rightfoot {
+  width: 30px;
+  height: 6px;
+  border: 3px solid black;
+  display: block;
+  position: absolute;
+  top: 270px;
+  left: 178px;
+  transform: rotate(-8deg);
+}
+/* CSS ANIMATION */
+
+
+/* CHATBOX CSS */
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 50px;
+  right: 0px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 0px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+/* CHATBOX CSS */
 .information-bar{
 display: grid;
 width: 200px;
