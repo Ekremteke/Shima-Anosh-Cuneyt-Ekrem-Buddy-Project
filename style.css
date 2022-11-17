@@ -344,3 +344,16 @@ color: rgb(63, 62, 62);
   opacity: 1;
 }
 /* CHATBOX CSS */
+.information-bar{
+display: grid;
+width: 200px;
+margin-top: 50px;
+margin-left: auto;
+margin-right: auto;
+}
+header{
+display: flex;
+margin: 32px;
+justify-content: space-between;
+
+}
